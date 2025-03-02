@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "Rubik", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+.header {
+	padding: 14px 0;
+	background-color: #0a61f7;
+}
+
+.link-navigation {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.title-main-section {
+	font-weight: 500;
+	font-size: 58px;
+	line-height: 68px;
+	color: #363940;
+	margin-bottom: 30px;
+}
+
+.main-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #95a1bb;
+	margin-bottom: 40px;
+}
+
+.btn {
+	border-radius: 4px;
+	width: 152px;
+	height: 50px;
+	background-color: #0a61f7;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19.6px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.rates-section {
+	padding: 100px 0;
+	background-color: #f9fafc;
+}
+
+.title-rates {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 43px;
+	color: #363940;
+	margin-bottom: 20px;
+}
+
+.table {
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #95A1BB;
+	width: 240px;
+	padding: 15px;
+	text-align: center;
+}
+
+.table-title {
+	font-weight: 500;
+	font-size: 18px;
+	color: #363940;
+	line-height: 22px;
+}
+
+.table-subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.57143;
+	color: #363940;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.table-subtitle.cursor-hover {
+	color: #95a1bb;
+}
+
+.table-link {
+	color: #0a61f7;
+}
+
+.table-btn {
+	width: 140px;
+	height: 36px;
+	border: 1px solid #0a61f7;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 19.6px;;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: #0a61f7;
+}
+
+.table-btn.table-btn-active {
+	background-color: #0a61f7;
+	color: #fff;
+}
+
+.table-footer td {
+	padding: 30px 0;
+}
+
+.create-account-section {
+	padding: 100px 0;
+}
+
+.title-create-account {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 43px;
+	color: #363940;
+	margin-bottom: 50px;
+}
+
+.list-info-item {
+	list-style-image: url(./assets/images/Check.svg);
+	margin-left: 30px;
+	margin-bottom: 15px;
+	color: #363940;
+}
+
+input, select, fieldset, textarea {
+	border: 1px solid #95a1bb;
+	border-radius: 4px;
+	padding: 14px 15px;
+}
+
+input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22.5px;
+	color: #95a1bb;
+	font-family: inherit;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+	width: 230px;
+	height: 50px;
+}
+
+fieldset {
+	/* width: 100px; */
+	width: 480px;
+	padding: 30px 15px;
+}
+
+textarea {
+	width: 480px;
+	min-height: 80px;
+	resize: none;
+}
+
+form .button {
+	width: 100%;
+}
+
+select {
+	background: url(./assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+	appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	background: url(./assets/images/Calendar.svg) no-repeat;
+}
+
+.button {
+	width: 480px;
+	height: 51px;
+	border-radius: 4px;
+	background-color: #0a61f7;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+footer {
+	padding: 20px 0;
+	background-color: #0a61f7;
+	text-align: center;
+}
+
+small {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #fff;
+}
+
+
