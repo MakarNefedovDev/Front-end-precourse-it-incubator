@@ -22,9 +22,23 @@ button {
 	background-color: transparent;
 }
 
+.container {
+	width: 100%;
+	height: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
 .header {
 	padding: 14px 0;
 	background-color: #0a61f7;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .link-navigation {
@@ -34,6 +48,27 @@ button {
 	letter-spacing: 1.4px;
 	text-transform: uppercase;
 	color: #fff;
+}
+
+.list-navigation-menu {
+	display: flex;
+	gap: 24px;
+}
+
+.main-info-section-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 800px;
+}
+
+.main-image-main-section {
+	align-self: flex-end;
+}
+
+.main-text {
+	margin-bottom: 40px;
+	max-width: 380px;
 }
 
 .title-main-section {
@@ -68,6 +103,12 @@ button {
 .rates-section {
 	padding: 100px 0;
 	background-color: #f9fafc;
+}
+
+.rates-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .title-rates {
@@ -139,6 +180,11 @@ th, td {
 	padding: 100px 0;
 }
 
+.create-account-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
 .title-create-account {
 	font-weight: 500;
 	font-size: 32px;
@@ -174,7 +220,6 @@ input[type="text"], input[type="email"], input[type="password"], input[type="dat
 }
 
 fieldset {
-	/* width: 100px; */
 	width: 480px;
 	padding: 30px 15px;
 }
@@ -185,8 +230,12 @@ textarea {
 	resize: none;
 }
 
-form .button {
+form {
 	width: 100%;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 select {
