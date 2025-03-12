@@ -15,7 +15,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	
 }
 
 ul {
@@ -38,10 +37,9 @@ button:hover {
 	height: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
-	/* border: 1px solid black; */
 }
 
-.header {
+header {
 	padding: 14px 0;
 	background-color: #0a61f7;
 }
@@ -178,9 +176,9 @@ th, td {
 	color: #0a61f7;
 }
 
-.table-btn.table-btn-active {
-	background-color: #0a61f7;
+.table-btn:hover {
 	color: #fff;
+	background-color: #0a61f7;
 }
 
 .table-footer td {
@@ -240,8 +238,7 @@ fieldset {
 	width: 480px;
 	padding: 30px 15px;
 	display: flex;
-	flex-direction: column;
-	gap: 10px;
+	column-gap: 30px;
 }
 
 textarea {
