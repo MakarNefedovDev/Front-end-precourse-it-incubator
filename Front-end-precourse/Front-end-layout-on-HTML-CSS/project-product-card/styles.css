@@ -221,6 +221,6 @@ h2 {
 	}
 
 	.product-info-content-block {
-		margin: 60px 60px 70px;
+		padding: 60px 70px 0;
 	}
 }
