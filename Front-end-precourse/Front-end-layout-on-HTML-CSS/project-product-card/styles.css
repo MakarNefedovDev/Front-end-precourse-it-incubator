@@ -70,7 +70,7 @@ section {
 	padding: 0 60px;
 }
 
-h1 {
+.main-title {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 38px;
@@ -87,7 +87,7 @@ h1 {
 	color: rgba(20, 20, 20, 0.4);
 }
 
-.product-info-text {
+.main-text {
 	font-family: "Rubik", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -206,14 +206,18 @@ h2 {
 	transform: scale(0.7);
 }
 
-@media screen and (max-width: 768px) {
+/* Tablet adaption */
+
+@media screen and (max-width: 1200px) {
 	.product-card {
 		flex-direction: column;
+		width: 690px;
 	}
 
 	.product-content-images-block {
 		border-bottom: 2px solid rgba(20, 20, 20, 0.15);
 		border-right: none;
+		min-width: auto;
 	}
 
 	.preview-wrapper {
@@ -222,5 +226,42 @@ h2 {
 
 	.product-info-content-block {
 		padding: 60px 70px 0;
+	}
+}
+
+/* Modile adaption */
+
+@media screen and (max-width: 576px) {
+	.product-card {
+		margin: 15px 15px 40px;
+	}
+
+	.product-info-content-block {
+		padding: 0 20px;
+	}
+
+	.main-image {
+		width: 250px;
+	}
+
+	.main-title {
+		font-size: 34px;
+		letter-spacing: 0.34px;
+	}
+
+	.subtitle {
+		font-size: 14px;
+		letter-spacing: 0.14px;
+	}
+	
+	.main-text {
+		font-size: 16px;
+		line-height: 1.6;
+		letter-spacing: 0.16px;
+		margin: 50px 0 55px ;
+	}
+
+	.btn {
+		margin: 65px 0 0;
 	}
 }
