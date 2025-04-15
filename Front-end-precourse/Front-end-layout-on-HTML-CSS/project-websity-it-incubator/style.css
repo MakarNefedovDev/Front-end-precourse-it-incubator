@@ -7,6 +7,7 @@
 html,
 body {
 	font-family: "Rubik", sans-serif;
+	min-width: 375px;
 }
 
 a {
@@ -37,7 +38,6 @@ button:hover {
 	height: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
-	border: 2px solid red;
 }
 
 header {
@@ -65,7 +65,11 @@ header {
 	gap: 24px;
 }
 
-.main-info-section-wrapper {
+.menu-icon {
+	display: none;
+}
+
+.main-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -74,6 +78,9 @@ header {
 
 .main-image {
 	align-self: flex-end;
+	margin: 20px;
+	max-width: 656px;
+	width: 100%;
 }
 
 .main-text {
@@ -113,6 +120,11 @@ header {
 .rates-section {
 	padding: 100px 0;
 	background-color: #f9fafc;
+}
+
+.rates-section .main-text {
+	margin-bottom: 40px;
+	text-align: center;
 }
 
 .rates-wrapper {
@@ -292,17 +304,77 @@ small {
 	color: #fff;
 }
 
+/* Adaptive under tablet */
+
 @media screen and (max-width: 1400px) {
-	.main-info-section-wrapper {
-		flex-direction: column;
+	.main-wrapper {
+		flex-direction: column-reverse;
+		min-height: auto;
 	}
 
 	.main-info-block {
 		align-self: flex-start;
-		margin: 100px 0 80px;
+		margin: 10px 0 80px
 	}
 
 	.main-image {
 		align-self: center;
+	}
+
+	.table {
+		width: 940px;
+	}
+
+	.table-wrapper {
+		overflow-x: auto;
+		width: 100%;
+		max-width: 940px;
+	}
+
+	.create-account-wrapper {
+		flex-direction: column;
+		gap: 70px;
+	}
+
+	.create-account-section .main-text {
+		max-width: unset;
+	}
+
+	form {
+		align-self: center;
+	}
+}
+
+/* Adaptive under mobile */
+
+@media screen and (max-width: 576px) {
+	.list-navigation-menu {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	.main-info-block {
+		margin: 60px 0;
+	}
+
+	.title-main-section {
+		font-size: 52px;
+		line-height: 60px;
+	}
+
+	.create-account-wrapper {
+		gap: 60px;
+	}
+
+	label {
+		white-space: nowrap;
+	}
+	
+	fieldset {
+		flex-wrap: wrap;
+		row-gap: 20px;
 	}
 }
